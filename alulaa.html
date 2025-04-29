@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العُلا</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f1ea;
+            color: #4e4e4e;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e0d7c6;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #6b4f3b;
+            font-size: 2.5em;
+        }
+
+        .menu-toggle {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #6b4f3b;
+            margin: 5px 0;
+        }
+
+        #menuLinks {
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 200px;
+            background-color: #f5f1ea;
+            display: none;
+        }
+
+        #menuLinks li {
+            padding: 10px;
+            text-align: right;
+        }
+
+        #menuLinks a {
+            color: #6b4f3b;
+            text-decoration: none;
+        }
+
+        .show-menu {
+            display: block;
+        }
+
+        main {
+            padding: 30px 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fffaf3;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #7b5e43;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #e0d7c6;
+            color: #6b4f3b;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #6b4f3b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>العُلا</h1>
+        <p>سحر الطبيعة والتاريخ</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>عن العُلا</h2>
+            <p>
+                العُلا مدينة تاريخية تقع في شمال غرب المملكة العربية السعودية، وتُعد من أهم الوجهات السياحية بفضل معالمها الأثرية الفريدة وتضاريسها الطبيعية الخلابة.
+            </p>
+            <img src="https://golden4tic.com/blog/wp-content/uploads/2024/10/%D8%A7%D9%84%D8%B9%D9%84%D8%A7-1024x623-1.webp" alt="صورة العُلا">
+        </section>
+
+        <section>
+            <h2>أشهر معالم العُلا</h2>
+            <ul>
+                <li><strong>المدائن الصالح:</strong> أحد مواقع التراث العالمي، ويعود لحضارة الأنباط.</li>
+                <li><strong>جبل الفيل:</strong> تكوين صخري طبيعي على شكل فيل ضخم.</li>
+                <li><strong>صخور الحجر:</strong> مجموعة من التكوينات الصخرية الرائعة وسط الصحراء.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>الفعاليات الثقافية</h2>
+            <p>
+                تستضيف العُلا مهرجانات سنوية مثل "شتاء طنطورة" وفعاليات موسيقية وفنية تعرض ثقافات متنوعة من حول العالم في بيئة ساحرة.
+            </p>
+        </section>
+
+        <section>
+            <h2><a href="activities.html">⇨ النشاطات السياحية في العُلا</a></h2>
+            <p>اضغط على الرابط أعلاه لاكتشاف الأنشطة السياحية والمغامرات الممتعة.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق النشر © 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <ul id="menuLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="alulaa.html">العُلا</a></li>
+        <li><a href="activities.html">النشاطات السياحية</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menuLinks');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

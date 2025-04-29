@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العُلا</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f1ea;
+            color: #4e4e4e;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e0d7c6;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #6b4f3b;
+            font-size: 2.5em;
+        }
+
+        .hamburger {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .hamburger div {
+            width: 35px;
+            height: 5px;
+            background-color: #6b4f3b;
+            margin: 6px 0;
+        }
+
+        .menu {
+            display: none;
+            background-color: #e0d7c6;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 9;
+        }
+
+        .menu a {
+            display: block;
+            color: #6b4f3b;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #9a7e5e;
+        }
+
+        #burgerMenu:checked + .menu {
+            display: block;
+        }
+
+        main {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 2.8em;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #e0d7c6;
+            color: #6b4f3b;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <label for="burgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" id="burgerMenu" style="display:none;">
+        </div>
+        <h1>صباح الخير</h1>
+    </header>
+
+    <main>
+        <h1>العُلا، وجهة تجمع بين الطبيعة والتراث الأصيل</h1>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3lcWH739TEEGoiDVN23zSmoF0ziLkjSN9g&s" alt="صورة العُلا">
+        </div>
+    </main>
+
+    <footer>
+        <p>حقوق النشر © 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <div class="menu">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="alulaa.html">العُلا</a>
+        <a href="activities.html">النشاطات السياحية</a>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('burgerMenu');
+        const menu = document.querySelector('.menu');
+        
+        menuToggle.addEventListener('change', function() {
+            menu.style.display = menuToggle.checked ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
